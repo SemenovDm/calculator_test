@@ -1,1 +1,1 @@
-privet medved
+privet

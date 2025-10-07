@@ -2,7 +2,7 @@ package calculator
 
 import "calculator_test/shapes"
 
-func TotalArea(circles []shapes.Circle, trianles []shapes.Triangle, rectanles []shapes.Rectangle) float64 {
+func TotalArea(circles []shapes.Circle, trianles []shapes.Triangle, rectanles []shapes.Rectangle, squares []shapes.Square, trapezoids []shapes.Trapezoid) float64 {
 
 	ta := 0.0
 
@@ -17,6 +17,14 @@ func TotalArea(circles []shapes.Circle, trianles []shapes.Triangle, rectanles []
 
 	for _, r := range rectanles {
 		ta += r.Area()
+	}
+
+	for _, sq := range squares {
+		ta += sq.Area()
+	}
+
+	for _, tr := range trapezoids {
+		ta += tr.Area()
 	}
 
 	return ta

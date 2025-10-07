@@ -23,6 +23,5 @@ func main() {
 
 	fmt.Println(totalArea)
 	fmt.Println(circle1)
-	fmt.Println(circle2)
 
 }
